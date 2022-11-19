@@ -887,7 +887,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .modal {
   width: 528px;
-  height: 581px;
+  height: 581px;;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -946,7 +946,18 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   padding-left: 40px;
   padding-right: 40px;
 }
+.text-form {
+  padding-top: 40px;
+  margin-bottom: 12px;
 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color)
+}
 .modal-input {
 
   width: 100%;
@@ -1023,35 +1034,38 @@ color:var(--primary-text-color);
   color: rgba(117, 117, 117, 0.5);
 }
 
-.text-form {
-  padding-top: 40px;
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color)
+/*галочка,умови договору*/
+.check-line {
+  margin-bottom: 30px;
 }
 
-.icon-check {
+.checkbox-agree {
+  display: flex;
+  align-items: center;
+}
 
-  border: 0.2px solid var(--primary-white-color);
+.checkbox-agree .icon-wrapper {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
-  color: var(--primary-white-color);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.checkbox-agree .agree-icon {
+  fill: transparent;
 }
-.icon-check:hover,
-.icon-check:focus {
-background-color: var(--accent-color);
+
+.check-line input:checked+.checkbox-agree .icon-wrapper {
+  background-color: var(--accent-color);
+  border: none;
 }
-.icon-check {
-  fill: currentColor;
+
+.check-line input:checked+.checkbox-agree .agree-icon {
+  fill: var(--primary-white-color);
 }
 
 .text-checkbox {
@@ -1066,8 +1080,6 @@ background-color: var(--accent-color);
   color: var(--accent-color);
 }
 .button-form {
-
-  margin-top: 30px;
-  margin-bottom: 40px;
   padding: 10px 52px;
+  margin: auto;
 }
