@@ -865,12 +865,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 /*підпишіться на розсилку*/
-.footer-modal-form{
-  margin-left: auto
-}
-
-.footer-form {
-  margin-left: 93px;
+.footer-modal-form {
+  margin-left: auto;
 }
 
 .footer-buttons {
@@ -900,7 +896,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .button-footer {
   display: flex;
-  align-items: center;
   margin-left: 12px;
 }
 
@@ -996,7 +991,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .modal-form {
-  padding: 40px; 
+  padding: 40px;
 }
 
 .text-form {
@@ -1011,6 +1006,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .input-line {
   display: block;
+  margin-bottom: 10px;
 }
 
 .modal-input {
@@ -1039,7 +1035,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .input-wrapper {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .input-wrapper input {
@@ -1081,6 +1076,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  margin-bottom: 20px;
  
   font-weight: 400;
   font-size: 12px;
@@ -1102,11 +1098,10 @@ border-color: var(--accent-color);
   outline: 0;
 }
 /*галочка,умови договору*/
-.check-line {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
 
+.check-line {
+  margin-bottom: 30px;
+}
 .checkbox-agree {
   display: flex;
   align-items: center;
